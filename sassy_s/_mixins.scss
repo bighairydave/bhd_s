@@ -1,0 +1,40 @@
+@mixin clearfix() {
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin hoverActiveFocus($property, $value) {
+    &:hover, &:active, &:focus {
+        #{$property}: $value;
+    }
+}
+
+@mixin font-size($sizeValue: 1.6){
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin link-colors($normal, $hover, $visited) {
+  color: $normal;
+  &:visited { color: $visited; }
+  &:hover { color: $hover; }
+}
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius + px;
+  -moz-border-radius: $radius + px;
+  -webkit-border-radius: $radius + px;
+}
+
+@mixin box-emboss($outerOpacity, $innerOpacity) {
+  box-shadow:
+    rgba(white, $outerOpacity) 0 1px 0, 
+    rgba(black, $innerOpacity) 0 1px 0 inset;
+}

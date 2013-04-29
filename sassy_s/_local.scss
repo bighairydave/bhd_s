@@ -1,0 +1,116 @@
+/* =local changes because I don't know where they really belong.
+----------------------------------------------- */
+
+/* Header Styles */
+.site-branding {
+	text-align: center;
+	padding-top: 2em;
+	}
+.site-title {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	@include font-size(4.8);
+	text-shadow: -1px -1px 0px #CCC;
+	
+	a {
+	text-decoration: none;
+	color: black;
+	}
+}
+.site-description {
+	display: block;
+	margin: 0 auto;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+	margin: .9em 0 2em;
+	font-weight: normal;
+	@include font-size(1.2);
+	color:#666;
+}
+
+/* Body Styles */
+.content-area {	
+	h1,h2,h3,h4,h5,h6 {
+	font-weight:700;
+	}
+	h1 {@include font-size(3.2)}
+	h2 {@include font-size(2.8)}
+	h3 {@include font-size(2.32)}
+	h4 {@include font-size(2.08)}
+	h5 {@include font-size(1.84)}
+	h6 {@include font-size(1.6)}
+	table {font-family: $base-font;@include font-size(1.2);}
+	a {
+		@include link-colors(SteelBlue, red, SteelBlue);
+		font-weight: 600;
+		text-decoration: none;
+	}
+	pre {
+		@include rounded-corners(10);
+	}
+	code {
+		word-wrap: break-word;
+		background: #eee;
+	}
+	.post, .navigation-paging {
+		border-top: 1px solid #333;
+		padding: 1em;
+	}
+	.entry-title {
+		a {@include link-colors(black, red, black)};
+	}
+	.entry-meta {
+		@include font-size(1);
+		color: #666;
+		a {@include link-colors(#666, red, #666)};
+		font-variant:small-caps;
+	}
+	.more-link {
+	  display:block;
+	  margin:10px 0 0;
+	}
+	.screen-reader-text {
+		text-transform: uppercase;
+		color: #666;
+		@include font-size(2);text-align:center;
+	}
+	.nav-previous, .nav-next {
+		font-variant:small-caps;
+		font-size: larger;
+	}
+}
+
+/* Comments */
+.comment {
+	background: #f9f9f9;
+	@include rounded-corners(5);
+	margin-top: 1rem;
+}
+
+/*Footer-widget*/
+
+#footer-sidebar {
+@include font-size(1.2);
+display:block;
+height: 250px;
+padding-left: 8rem;
+}
+.footer-sidebar-area {
+float: left;
+width: 30%;
+min-width: 200px;
+background: white;
+padding: 10px;
+}
+.widget-title {
+	@include font-size(2.4);
+	color: #666;
+}
+.site-footer {
+		@include font-size(1);
+		color: #666;
+		a {@include link-colors(#666, red, #666)};
+		font-variant:small-caps;
+		text-align: center;
+}

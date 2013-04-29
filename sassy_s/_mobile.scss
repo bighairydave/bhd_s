@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+		#page {
+			margin:0;
+		}
+		.content-area, .post, .site-content {
+		margin: 0!important;}
+		.site-title {@include font-size(3.2);}
+		.navigation-post, .comments-area {
+			 margin-left: 1rem;
+			 margin-right: 1rem;
+			}
+}
