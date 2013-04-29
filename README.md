@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 _s
 ===
 
@@ -40,3 +41,9 @@ Then, update the stylesheet header in style.css and the links in footer.php with
 Now you're ready to go! The next step is easy to say but harder to do: make an awesome WordPress theme. :)
 
 Good luck!
+=======
+bhd_s
+=====
+
+A very minimal wordpress theme based on _s.
+>>>>>>> 824a2bb17190e3f532423ef7a19a53c4310426b4
